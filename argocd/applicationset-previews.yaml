@@ -8,7 +8,7 @@ spec:
   goTemplateOptions: ["missingkey=error"]
   generators:
     - git:
-        repoURL: https://github.com/YOUR-ORG/YOUR-GITOPS-REPO.git
+        repoURL: https://github.com/amine7536/badil-quickstart-gitops.git
         revision: HEAD
         directories:
           - path: "previews/*"
@@ -20,7 +20,7 @@ spec:
     spec:
       project: previews
       sources:
-        - repoURL: https://github.com/YOUR-ORG/YOUR-GITOPS-REPO.git
+        - repoURL: https://github.com/amine7536/badil-quickstart-gitops.git
           targetRevision: HEAD
           ref: values
         - repoURL: oci://ghcr.io/badilhq/charts/preview-apps
